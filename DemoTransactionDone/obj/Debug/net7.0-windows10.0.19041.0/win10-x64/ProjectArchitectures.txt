@@ -1,0 +1,1 @@
+C:\Source\HolaDemo\DemoTransactionDone\DemoTransactionDone\DemoTransactionDone.csproj;x64

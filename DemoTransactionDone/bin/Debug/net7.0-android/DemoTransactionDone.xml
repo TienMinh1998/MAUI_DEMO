@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>DemoTransactionDone</name>
+    </assembly>
+    <members>
+        <member name="F:DemoTransactionDone.Mvvm.ViewModels.HomeViewModel.goToMainCommand">
+            <summary>The backing field for <see cref="P:DemoTransactionDone.Mvvm.ViewModels.HomeViewModel.GoToMainCommand"/>.</summary>
+        </member>
+        <member name="P:DemoTransactionDone.Mvvm.ViewModels.HomeViewModel.GoToMainCommand">
+            <summary>Gets an <see cref="T:CommunityToolkit.Mvvm.Input.IRelayCommand"/> instance wrapping <see cref="M:DemoTransactionDone.Mvvm.ViewModels.HomeViewModel.GoToMain"/>.</summary>
+        </member>
+    </members>
+</doc>

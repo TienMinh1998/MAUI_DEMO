@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="DemoTransactionDone.Mvvm.Views.HomePage"
+             Title="HomePage">
+    <ContentPage.Resources>
+        <ResourceDictionary>
+            <!--Image-->
+            <Style x:Key="top_image" TargetType="Image">
+                <Setter Property="Margin" Value="10" ></Setter>
+                <Setter Property="VerticalOptions" Value="StartAndExpand" ></Setter>
+                <Setter Property="Margin" Value="10" ></Setter>
+            </Style>
+                <!--Button-->
+            <Style x:Key="btn" TargetType="Button">
+                <Setter Property="Margin" Value="10" ></Setter>
+                <Setter Property="VerticalOptions" Value="EndAndExpand" ></Setter>
+                <Setter Property="FontAttributes" Value="Bold" ></Setter>
+                <Setter Property="BackgroundColor" Value="#038757" ></Setter>
+                <Setter Property="CornerRadius" Value="10" ></Setter>
+            </Style>
+
+            <!--Center Label-->
+            <Style x:Key="lbl_center" TargetType="Button">
+                <Setter Property="Margin" Value="10,10,10,0" ></Setter>
+                <Setter Property="FontSize" Value="16" ></Setter>
+                <Setter Property="CharacterSpacing" Value="1" ></Setter>
+     
+           
+            </Style>
+
+
+        </ResourceDictionary>
+    </ContentPage.Resources>
+    <StackLayout>
+
+
+        <StackLayout VerticalOptions="StartAndExpand">
+            <Label 
+                CharacterSpacing="5"
+                Margin="10"
+                FontAttributes="Bold"
+                FontSize="18"
+                HorizontalOptions="Center"
+                Text="Transaction Done"></Label>
+            <Image
+            Style="{StaticResource top_image}"
+            Source="tran_done">
+            </Image>
+        </StackLayout>
+
+        <Label 
+            Style="{StaticResource lbl_center}"
+            Text="Transaction has been completed." 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"></Label>
+        <Label 
+            Style="{StaticResource lbl_center}"
+            Text="Thank you!" 
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"></Label>
+        <Button 
+            Style="{StaticResource btn}"
+            Text="Done"
+            Command="{Binding GoToMainCommand}"
+            ></Button>
+            
+    </StackLayout>
+</ContentPage>
